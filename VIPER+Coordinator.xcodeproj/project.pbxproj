@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001C32A02962220B004E1687 /* AAASPM in Frameworks */ = {isa = PBXBuildFile; productRef = 001C329F2962220B004E1687 /* AAASPM */; };
+		001C32A22962220E004E1687 /* BBBSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 001C32A12962220E004E1687 /* BBBSPM */; };
+		001C32A429622210004E1687 /* Tool in Frameworks */ = {isa = PBXBuildFile; productRef = 001C32A329622210004E1687 /* Tool */; };
+		00528F1A2911413800FAFBC5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00528F192911413800FAFBC5 /* AppCoordinator.swift */; };
 		00F6B8FC2911166C00F37F6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6B8FB2911166C00F37F6E /* AppDelegate.swift */; };
-		00F6B8FE2911166C00F37F6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6B8FD2911166C00F37F6E /* SceneDelegate.swift */; };
-		00F6B9002911166C00F37F6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6B8FF2911166C00F37F6E /* ViewController.swift */; };
-		00F6B9032911166C00F37F6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F6B9012911166C00F37F6E /* Main.storyboard */; };
 		00F6B9052911166E00F37F6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F6B9042911166E00F37F6E /* Assets.xcassets */; };
 		00F6B9082911166E00F37F6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F6B9062911166E00F37F6E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0021286E29621FD600F78E58 /* AAASPM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AAASPM; sourceTree = "<group>"; };
+		0021286F29621FDD00F78E58 /* BBBSPM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BBBSPM; sourceTree = "<group>"; };
+		002128702962214900F78E58 /* Tool */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Tool; sourceTree = "<group>"; };
+		00528F192911413800FAFBC5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		00F6B8F82911166C00F37F6E /* VIPER+Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER+Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F6B8FB2911166C00F37F6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00F6B8FD2911166C00F37F6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		00F6B8FF2911166C00F37F6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		00F6B9022911166C00F37F6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00F6B9042911166E00F37F6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00F6B9072911166E00F37F6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00F6B9092911166E00F37F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F6B90F2911178D00F37F6E /* VIPERScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERScript.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +34,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001C32A429622210004E1687 /* Tool in Frameworks */,
+				001C32A22962220E004E1687 /* BBBSPM in Frameworks */,
+				001C32A02962220B004E1687 /* AAASPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001C329E2962220B004E1687 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0021286D29621FD600F78E58 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				0021286E29621FD600F78E58 /* AAASPM */,
+				0021286F29621FDD00F78E58 /* BBBSPM */,
+				002128702962214900F78E58 /* Tool */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		00F6B8EF2911166C00F37F6E = {
 			isa = PBXGroup;
 			children = (
+				0021286D29621FD600F78E58 /* Packages */,
 				00F6B8FA2911166C00F37F6E /* VIPER+Coordinator */,
 				00F6B8F92911166C00F37F6E /* Products */,
+				001C329E2962220B004E1687 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				00F6B8FB2911166C00F37F6E /* AppDelegate.swift */,
-				00F6B8FD2911166C00F37F6E /* SceneDelegate.swift */,
-				00F6B8FF2911166C00F37F6E /* ViewController.swift */,
-				00F6B9012911166C00F37F6E /* Main.storyboard */,
+				00528F192911413800FAFBC5 /* AppCoordinator.swift */,
 				00F6B9042911166E00F37F6E /* Assets.xcassets */,
 				00F6B9062911166E00F37F6E /* LaunchScreen.storyboard */,
+				00F6B90F2911178D00F37F6E /* VIPERScript.swift */,
 				00F6B9092911166E00F37F6E /* Info.plist */,
 			);
 			path = "VIPER+Coordinator";
@@ -83,6 +107,11 @@
 			dependencies = (
 			);
 			name = "VIPER+Coordinator";
+			packageProductDependencies = (
+				001C329F2962220B004E1687 /* AAASPM */,
+				001C32A12962220E004E1687 /* BBBSPM */,
+				001C32A329622210004E1687 /* Tool */,
+			);
 			productName = "VIPER+Coordinator";
 			productReference = 00F6B8F82911166C00F37F6E /* VIPER+Coordinator.app */;
 			productType = "com.apple.product-type.application";
@@ -127,7 +156,6 @@
 			files = (
 				00F6B9082911166E00F37F6E /* LaunchScreen.storyboard in Resources */,
 				00F6B9052911166E00F37F6E /* Assets.xcassets in Resources */,
-				00F6B9032911166C00F37F6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F6B9002911166C00F37F6E /* ViewController.swift in Sources */,
+				00528F1A2911413800FAFBC5 /* AppCoordinator.swift in Sources */,
 				00F6B8FC2911166C00F37F6E /* AppDelegate.swift in Sources */,
-				00F6B8FE2911166C00F37F6E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		00F6B9012911166C00F37F6E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00F6B9022911166C00F37F6E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		00F6B9062911166E00F37F6E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,11 +309,10 @@
 				DEVELOPMENT_TEAM = TLVPYH63L4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "VIPER+Coordinator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VIPER-C";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +336,10 @@
 				DEVELOPMENT_TEAM = TLVPYH63L4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "VIPER+Coordinator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VIPER-C";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +375,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		001C329F2962220B004E1687 /* AAASPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AAASPM;
+		};
+		001C32A12962220E004E1687 /* BBBSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BBBSPM;
+		};
+		001C32A329622210004E1687 /* Tool */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Tool;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00F6B8F02911166C00F37F6E /* Project object */;
 }
